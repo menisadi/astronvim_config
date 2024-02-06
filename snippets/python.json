@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "prefix": ["imports"],
+    "body": [
+      "import pandas as pd"
+    ],
+    "description": "Import all the basic data libraries"
+  }
+}
