@@ -6,5 +6,4 @@ return {
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
-  -- { import = "astrocommunity.motion.leap-nvim" },
 }
