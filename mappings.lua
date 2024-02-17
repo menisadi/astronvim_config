@@ -20,4 +20,9 @@ vim.api.nvim_set_keymap(
 )
 
 -- [[ Flash ]]
-vim.keymap.set({ "n", "x", "o" }, "<cr>", function() require("flash").jump() end, { desc = "Flash" })
+-- vim.keymap.set(
+--   { "n", "x", "o" },
+--   "<cr>",
+--   function() require("flash").jump() end,
+--   { desc = "Flash", remap = true }
+-- )
