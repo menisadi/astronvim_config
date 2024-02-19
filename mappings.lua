@@ -3,7 +3,7 @@ local fl = require "flash"
 
 local keymaps = {
   n = {
-    ["<F4>"] = {
+    ["<leader>le"] = {
       ":w<CR>:10split | terminal python %<CR>",
       desc = "Execute Python code in a new pane",
       noremap = true,
