@@ -1,20 +1,31 @@
 local lp = require "luasnip"
 local fl = require "flash"
+local td = require "todo-comments"
 
 local keymaps = {
   n = {
     ["<leader>le"] = {
-      ":w<CR>:10split | terminal python %<CR>",
-      desc = "Execute Python code in a new pane",
+      "<cmd>w<CR><cmd>10split <bar> terminal python %<CR>",
       noremap = true,
       buffer = true,
+      desc = "Execute Python code in a new pane",
     },
     ["<cr>"] = { function() fl.jump() end, desc = "Flash", remap = true },
-    ["<Leader>lc"] = {
-      ":lua require('neogen').generate()<CR>",
+    ["<leader>lc"] = {
+      function() require("neogen").generate() end,
       noremap = true,
       silent = true,
       desc = "Generate annotation using Neogen",
+    },
+    ["[c"] = {
+      function() td.jump_prev() end,
+      desc = "Previous todo comment",
+      silent = true,
+    },
+    ["]c"] = {
+      function() td.jump_next() end,
+      desc = "Next todo comment",
+      silent = true,
     },
   },
   i = {
