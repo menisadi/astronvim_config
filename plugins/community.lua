@@ -6,4 +6,7 @@ return {
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.media.vim-wakatime" },
+  { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.scrolling.mini-animate" },
 }
