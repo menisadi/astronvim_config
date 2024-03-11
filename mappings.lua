@@ -1,5 +1,5 @@
 local lp = require "luasnip"
--- local fl = require "flash"
+local fl = require "flash"
 local td = require "todo-comments"
 
 local keymaps = {
@@ -10,9 +10,11 @@ local keymaps = {
       buffer = true,
       desc = "Execute Python code in a new pane",
     },
-    -- ["<cr>"] = {
-    --   function() fl.jump() end, desc = "Flash", remap = true
-    -- },
+    ["<leader>fl"] = {
+      function() fl.jump() end,
+      desc = "Flash jump",
+      remap = true,
+    },
     ["<leader>lc"] = {
       function() require("neogen").generate() end,
       noremap = true,
@@ -42,10 +44,10 @@ local keymaps = {
     },
   },
   x = {
-    -- ["<cr>"] = { function() fl.jump() end, desc = "Flash", remap = true },
+    ["<leader>fl"] = { function() fl.jump() end, desc = "Flash jump", remap = true },
   },
   o = {
-    -- ["<cr>"] = { function() fl.jump() end, desc = "Flash", remap = true },
+    ["<leader>fl"] = { function() fl.jump() end, desc = "Flash jump", remap = true },
   },
 }
 

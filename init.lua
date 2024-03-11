@@ -1,5 +1,8 @@
 return {
-  colorscheme = "astrodark",
+  -- colorscheme = "astrodark",
+  -- colorscheme = "catppuccin-mocha",
+  -- colorscheme = "tokyonight-night",
+  colorscheme = "kanagawa",
   polish = function()
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "python",
